@@ -13,12 +13,11 @@ public class Operator {
     public void executeCommands(Scanner in, CSVWriter out){
 //        out.println("Time\t" + cloud.getHeaders());
 //        out.println(time+"\t"+cloud.getState());
-        while(in.hasNextInt()){
-
-            time=in.nextInt();
-            String string=in.next();
-            if (!string.equals("L")) {
-                //out.println("Unexpected device:" + string);
+        while(in.hasNext()){
+            int time=in.nextInt();
+            String str=in.next();
+            if (!str.equals("L")) {
+                //out.println("Unexpected device:" + str);
                 System.exit(-1);
             }
             int channel=in.nextInt();
@@ -63,7 +62,6 @@ public class Operator {
             //????
         }
     }
-    private double time=0;
     private LampControl lampControl;
     private Cloud cloud;
 }

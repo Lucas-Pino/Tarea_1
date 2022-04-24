@@ -30,6 +30,7 @@ public class Stage1 {
         // skipping creation of roller shade's controls at <canal0>
         in.nextLine();
         // creating just one lamp's control at <canal0> channel = in.nextInt();
+        channel = in.nextInt();
         LampControl lampControl = new LampControl(channel, cloud);
         Operator operator = new Operator(lampControl, cloud);
 

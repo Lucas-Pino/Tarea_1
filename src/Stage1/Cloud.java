@@ -14,7 +14,7 @@ public class Cloud {
         return lamps.get(0);
     }
     public void changeLampPowerState(int channel, CSVWriter out){
-        String[] instruction = {};
+        String[] instruction = {""};
         for (Lamp l: lamps){
             if (l.getChannel() == channel){
                 l.changePowerState();
@@ -22,7 +22,7 @@ public class Cloud {
             }
 
         }
-
+        System.out.println(instruction[0]);
         out.writeNext(instruction);
     }
     public void changeRed(int channel, String change, CSVWriter out){
