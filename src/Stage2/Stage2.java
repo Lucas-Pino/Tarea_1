@@ -1,4 +1,7 @@
+import com.opencsv.CSVWriter;
+
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -29,6 +32,13 @@ public class Stage2 {
         ShadeControl shadeControl = new ShadeControl(channel, cloud);
         in.nextLine(); // skipping creation of lamp's control at <canal0>
         Operator operator = new Operator(shadeControl, cloud);
-        operator.executeCommands(in, System.out);
+
+
+        // Write CSV
+        File Out_stage2 = new File("src/Stage2/output.csv");
+        FileWriter outputfile = new FileWriter(Out_stage2);
+        CSVWriter writer = new CSVWriter(outputfile);
+        operator.executeCommands(in, writer);
+        writer.close();                         // cierre del archivo escritura
     }
 }

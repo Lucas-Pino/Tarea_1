@@ -1,3 +1,5 @@
+import com.opencsv.CSVWriter;
+
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -9,7 +11,7 @@ public class Operator {
 //    public void addShadeControl(ShadeControl sc){
 //        // ???
 //    }
-    public void executeCommands(Scanner in, PrintStream out){
+    public void executeCommands(Scanner in, CSVWriter out){
         //out.println("Time\t" + cloud.getHeaders());
         String[] header = {"Time\t" + cloud.getHeaders()};
         out.writeNext(header);
