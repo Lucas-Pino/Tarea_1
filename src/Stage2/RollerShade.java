@@ -66,4 +66,6 @@ public class RollerShade extends DomoticDevice {
     private double length;
     private double MaxShadeLength;
     private static int nextId;
+
+
 }
