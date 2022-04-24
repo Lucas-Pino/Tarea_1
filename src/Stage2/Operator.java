@@ -11,17 +11,20 @@ public class Operator {
 //    }
     public void executeCommands(Scanner in, PrintStream out){
         //out.println("Time\t" + cloud.getHeaders());
+        String[] header = {"Time\t" + cloud.getHeaders()};
+        out.writeNext(header);
         while(in.hasNextInt()){
             int commandTime=in.nextInt();
+
             while (time < commandTime) {
-                //out.println(time+"\t"+cloud.getState());
+                //System.out.println(time+"\t"+cloud.getState());
                 cloud.advanceTime(delta);
                 time+=delta;
             }
             String device=in.next();
 
             if (!device.equals("C")) {
-                out.println("Unexpected device:" + device);
+                System.out.println("Unexpected device:" + device);
                 System.exit(-1);
             }
             int channel = in.nextInt();
@@ -34,10 +37,12 @@ public class Operator {
                 }else if(command.equals("D")){
                     rsControl.startDown();
                 }else{
-                    out.println("Unexpected command:" + command);
+                    System.out.println("Unexpected command:" + command);
                     System.exit(-1);
                 }
             }
+            String[] state = {commandTime+"\t"+cloud.getState()};
+            out.writeNext(state);
         }
     }
     private double time=0;

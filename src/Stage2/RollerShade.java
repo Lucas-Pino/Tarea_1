@@ -5,6 +5,9 @@ public class RollerShade extends DomoticDevice {
         this.length = length;
         motor = new Motor(alpha, channel);
     }
+    public Motor.MotorState getMotorState(){
+        return motor.state;
+    }
     public void startUp(){
         motor.turnUp();
     }
@@ -30,6 +33,9 @@ public class RollerShade extends DomoticDevice {
             channel = ch;
             alpha = a;
             state = MotorState.STOPPED;
+        }
+        public MotorState getMotorState(){
+            return state;
         }
         public enum MotorState {
             UPWARD,

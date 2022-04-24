@@ -29,25 +29,19 @@ public class Cloud {
     public void startShadeUp(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            if (rs.getChannel() == channel){
-                rs.startUp();
-            }
+            rs.startUp();
         }
     }
     public void startShadeDown(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            if (rs.getChannel() == channel){
-                rs.startDown();
-            }
+            rs.startDown();
         }
     }
     public void stopShade(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            if (rs.getChannel() == channel){
-                rs.stop();
-            }
+            rs.stop();
         }
     }
     public String getHeaders(){
@@ -61,8 +55,20 @@ public class Cloud {
         return header;
     }
     public String getState(){
-        // ???
-        return "";
+        String state = "";
+        for (DomoticDevice  dd: rollerShades){
+            RollerShade rs =(RollerShade)dd;
+            //state = state + rs.getMotorState() +"\t";
+            String st = rs.getMotorState().toString();
+            if (st.equals("UPWARD")){
+                state = state + 100 +"\t";
+            } else if (st.equals("STOPPED")){
+                state = state + 0 +"\t";
+            } else if (st.equals("DOWNWARD")){
+                state = state + -100 +"\t";
+            }
+        }
+        return state;
     }
     private ArrayList<DomoticDevice> lamps;
     private ArrayList<DomoticDevice> rollerShades;
