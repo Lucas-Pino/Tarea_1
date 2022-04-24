@@ -1,4 +1,8 @@
 public abstract class DomoticDevice {
+    public DomoticDevice(){
+        this.channel = -1;
+        this.id = -1;
+    }
     public DomoticDevice(int id, int ch){
        // ???
     }
@@ -9,6 +13,6 @@ public abstract class DomoticDevice {
         return id;
     }
     public abstract String getHeader();
-    private final int id;
+    private int id;
     private int channel;
 }

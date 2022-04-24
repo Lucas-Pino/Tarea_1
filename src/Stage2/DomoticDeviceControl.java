@@ -1,4 +1,7 @@
 public class DomoticDeviceControl {
+    public DomoticDeviceControl(){
+        // ???
+    }
     public DomoticDeviceControl(int ch, Cloud c){
         // ???
     }

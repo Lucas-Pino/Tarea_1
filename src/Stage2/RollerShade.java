@@ -1,8 +1,8 @@
 public class RollerShade extends DomoticDevice {
     public RollerShade (int channel, double alpha, double length) {
-        // ???
-        motor = new Motor(alpha);
-        // ??
+        this.motor = motor;
+        this.MaxShadeLength = length;
+        motor = new Motor(alpha, channel);
     }
     public void startUp(){
         motor.turnUp();
@@ -25,7 +25,8 @@ public class RollerShade extends DomoticDevice {
         return s;
     }
     private class Motor {  //nested class, Motor is only used within RollerShade.
-        public Motor (double a){
+        public Motor (double a, int ch){
+            channel = ch;
             alpha = a;
             state = MotorState.STOPPED;
         }
@@ -38,10 +39,10 @@ public class RollerShade extends DomoticDevice {
             state = MotorState.UPWARD;
         }
         public void turnDown(){
-            // ??
+            state = MotorState.DOWNWARD;
         }
         public void stop(){
-            // ??
+            state = MotorState.STOPPED;
         }
         public void advanceTime(double delta){
             double increment = alpha*delta*RADIUS;
@@ -56,12 +57,13 @@ public class RollerShade extends DomoticDevice {
             }
         }
         private double alpha;
+        private int channel;
         private MotorState state;
         private static double RADIUS=0.04;
     }
 
     private Motor motor;
     private double length;
-    private final double MaxShadeLength;
+    private double MaxShadeLength;
     private static int nextId;
 }

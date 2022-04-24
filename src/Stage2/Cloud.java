@@ -17,9 +17,11 @@ public class Cloud {
             rs.advanceTime(delta);
         }
     }
-    private DomoticDevice getDomoticDeviceAtChannel( ArrayList<DomoticDevice> devices, int channel){
-        // ???
-    }
+//    private DomoticDevice getDomoticDeviceAtChannel( ArrayList<DomoticDevice> devices, int channel){
+//        // ???
+//        DomoticDevice test = new DomoticDevice();
+//        return test;
+//    }
     public void changeLampPowerState(int channel){
         // ???
     }
@@ -42,6 +44,7 @@ public class Cloud {
     }
     public String getState(){
         // ???
+        return "";
     }
     private ArrayList<DomoticDevice> lamps;
     private ArrayList<DomoticDevice> rollerShades;

@@ -2,12 +2,13 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Operator {
-    public Operator(Cloud c){
-        // ???
+    public Operator(ShadeControl sc, Cloud c){
+        this.rsControl = sc;
+        this.cloud = c;
     }
-    public void addShadeControl(ShadeControl sc){
-        // ???
-    }
+//    public void addShadeControl(ShadeControl sc){
+//        // ???
+//    }
     public void executeCommands(Scanner in, PrintStream out){
         out.println("Time\t" + cloud.getHeaders());
         while(in.hasNextInt()){

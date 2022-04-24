@@ -7,6 +7,7 @@ public class Lamp extends DomoticDevice {
     }
     public String getHeader(){
         // ???
+        return "";
     }
     public String toString(){
         if (state==LampState.ON)
