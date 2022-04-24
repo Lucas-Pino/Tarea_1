@@ -32,6 +32,7 @@ public class LampControl {
     }
 
 
+
     private int channel;
     private Cloud cloud;
 }
