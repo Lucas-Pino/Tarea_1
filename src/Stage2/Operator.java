@@ -10,15 +10,16 @@ public class Operator {
 //        // ???
 //    }
     public void executeCommands(Scanner in, PrintStream out){
-        out.println("Time\t" + cloud.getHeaders());
+        //out.println("Time\t" + cloud.getHeaders());
         while(in.hasNextInt()){
             int commandTime=in.nextInt();
             while (time < commandTime) {
-                out.println(time+"\t"+cloud.getState());
+                //out.println(time+"\t"+cloud.getState());
                 cloud.advanceTime(delta);
                 time+=delta;
             }
             String device=in.next();
+
             if (!device.equals("C")) {
                 out.println("Unexpected device:" + device);
                 System.exit(-1);
@@ -26,15 +27,18 @@ public class Operator {
             int channel = in.nextInt();
             String command=in.next();
             if (channel == rsControl.getChannel()) {
-                switch (command.charAt(0)) {
-                    case 'D': //??
-                    // ??
-                    default: out.println("Unexpected command:" + command);
-                        System.exit(-1);
+                if (command.equals("U")){
+                    rsControl.startUp();
+                }else if(command.equals("S")){
+                    rsControl.stop();
+                }else if(command.equals("D")){
+                    rsControl.startDown();
+                }else{
+                    out.println("Unexpected command:" + command);
+                    System.exit(-1);
                 }
             }
         }
-        out.println(time+"\t"+cloud.getState());
     }
     private double time=0;
     private ShadeControl rsControl;

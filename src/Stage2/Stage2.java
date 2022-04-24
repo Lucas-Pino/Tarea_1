@@ -8,8 +8,8 @@ public class Stage2 {
 //            System.out.println("Usage: java Stage1 <configurationFile.txt>");
 //            System.exit(-1);
 //        }
-        File file = new File("./configuration.txt");
-        Scanner in = new Scanner(new File(args[0]));
+        File file = new File("src/Stage2/configuration.txt");
+        Scanner in = new Scanner(file);
         //System.out.println("File: " + args[0]);
         Cloud cloud = new Cloud();
         // reading <#_de_cortinas> <#_de_lámparas> <#_controles_cortinas> <#_controles_lámparas>
@@ -23,11 +23,11 @@ public class Stage2 {
         int channel = in.nextInt();
         RollerShade rollerShade = new RollerShade(channel, alpha, maxLength);
         cloud.addRollerShade(rollerShade);
-        in.nextInt(); // skip lamp's channels
+        in.nextLine(); // skip lamp's channels
         // creating just one roller shade's control at <canal0>
         channel = in.nextInt();
         ShadeControl shadeControl = new ShadeControl(channel, cloud);
-        in.nextInt(); // skipping creation of lamp's control at <canal0>
+        in.nextLine(); // skipping creation of lamp's control at <canal0>
         Operator operator = new Operator(shadeControl, cloud);
         operator.executeCommands(in, System.out);
     }
