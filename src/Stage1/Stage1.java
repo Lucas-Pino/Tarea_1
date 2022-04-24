@@ -6,12 +6,13 @@ import java.util.Scanner;
 
 
 public class Stage1 {
-    public static void main(String [] args) throws IOException {
-        if (args.length != 1) {
-            System.out.println("Usage: java Stage1 <configurationFile.txt>");
-            System.exit(-1);
-        }
-        Scanner in = new Scanner(new File(args[0]));
+    public static void main(String[] args) throws IOException {
+//        if (args.length != 1) {
+//            System.out.println("Usage: java Stage1 <configurationFile.txt>");
+//            System.exit(-1);
+//        }
+        File file = new File("src/Stage1/configuration.txt");
+        Scanner in = new Scanner(file);
         //System.out.println("File: " + args[0]);
         Cloud cloud = new Cloud();
         // reading <#_de_cortinas> <#_de_lámparas> <#_controles_cortinas> <#_controles_lámparas>
