@@ -1,89 +1,75 @@
-import com.opencsv.CSVWriter;
-
 import java.util.ArrayList;
 
 public class Cloud {
     public Cloud() {
-        lamps = new ArrayList<Lamp>();
+        lamps = new ArrayList<DomoticDevice>();
+        rollerShades = new ArrayList<DomoticDevice>();
     }
     public void addLamp(Lamp l){
         lamps.add(l);
     }
-    public Lamp getLampAtChannel( int channel){
-        //???
-        return lamps.get(0);
+    public void addRollerShade(RollerShade rs){
+        rollerShades.add(rs);
     }
-    public void changeLampPowerState(int channel, CSVWriter out, int time){
-        String[] instruction = {time+"\t"};
-        for (Lamp l: lamps){
-            if (l.getChannel() == channel){
-                l.changePowerState();
-                instruction[0] = instruction[0] + l.toStr();
-            }
+    public void advanceTime(double delta){
+        for (DomoticDevice dd: rollerShades) {
+            RollerShade rs =(RollerShade)dd;
+            rs.advanceTime(delta);
 
         }
-        System.out.println(instruction[0]);
-        out.writeNext(instruction);
     }
-    public void changeRed(int channel, String change, CSVWriter out, int time){
-        String[] instruction = {time+"\t"};
-        for (Lamp l: lamps){
-            if (l.getChannel() == channel){
-                if (change.equals("UP")) {
-                    l.rUP();
-                }else if (change.equals("DOWN")){
-                    l.rDOWN();
-                }
-                instruction[0] = instruction[0] + l.toStr();
-            }
-        }
-        System.out.println(instruction[0]);
-        out.writeNext(instruction);
+//    private DomoticDevice getDomoticDeviceAtChannel( ArrayList<DomoticDevice> devices, int channel){
+//        // ???
+//        DomoticDevice test = new DomoticDevice();
+//        return test;
+//    }
+    public void changeLampPowerState(int channel){
+        // ???
     }
-    public void changeGreen(int channel, String change, CSVWriter out, int time){
-        String[] instruction = {time+"\t"};
-        for (Lamp l: lamps){
-            if (l.getChannel() == channel){
-                if (change.equals("UP")) {
-                    l.gUP();
-                }else if (change.equals("DOWN")){
-                    l.gDOWN();
-                }
-                instruction[0] = instruction[0] + l.toStr();
-            }
+    public void startShadeUp(int channel){
+        for(DomoticDevice  dd: rollerShades){
+            RollerShade rs =(RollerShade)dd;
+            rs.startUp();
         }
-        System.out.println(instruction[0]);
-        out.writeNext(instruction);
     }
-    public void changeBlue(int channel, String change, CSVWriter out, int time){
-        String[] instruction = {time+"\t"};
-        for (Lamp l: lamps){
-            if (l.getChannel() == channel){
-                if (change.equals("UP")) {
-                    l.bUP();
-                }else if (change.equals("DOWN")){
-                    l.bDOWN();
-                }
-                instruction[0] = instruction[0] + l.toStr();
-            }
+    public void startShadeDown(int channel){
+        for(DomoticDevice  dd: rollerShades){
+            RollerShade rs =(RollerShade)dd;
+            rs.startDown();
         }
-        System.out.println(instruction[0]);
-        out.writeNext(instruction);
+    }
+    public void stopShade(int channel){
+        for(DomoticDevice  dd: rollerShades){
+            RollerShade rs =(RollerShade)dd;
+            rs.stop();
+        }
     }
     public String getHeaders(){
-        StringBuilder header = new StringBuilder("Time\t");
-        int counter = 0;
-        for (Lamp l: lamps){
-            header.append("L").append(counter).append("R\t").append("L").append(counter).append("G\t").append("L").append(counter).append("B\t");
-            counter ++;
+        String header = "";
+        for (DomoticDevice  rs: rollerShades){
+            header += rs.getHeader()+"\t";
         }
-            
-        return header.toString();
+        for (DomoticDevice l: lamps){
+            header += l.getHeader()+"\t";
+        }
+        return header;
     }
-    public String getState(){       //que raios
-        //??
-        return "Hola";
-
+    public String getState(){
+        String state = "";
+        for (DomoticDevice  dd: rollerShades){
+            RollerShade rs =(RollerShade)dd;
+            //state = state + rs.getMotorState() +"\t";
+            String st = rs.getMotorState().toString();
+            if (st.equals("UPWARD")){
+                state = state + 100 +"\t";
+            } else if (st.equals("STOPPED")){
+                state = state + 0 +"\t";
+            } else if (st.equals("DOWNWARD")){
+                state = state + -100 +"\t";
+            }
+        }
+        return state;
     }
-    private ArrayList<Lamp> lamps; // getting ready for next stages
+    private ArrayList<DomoticDevice> lamps;
+    private ArrayList<DomoticDevice> rollerShades;
 }
