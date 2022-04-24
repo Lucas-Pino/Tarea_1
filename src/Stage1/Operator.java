@@ -13,6 +13,8 @@ public class Operator {
     public void executeCommands(Scanner in, CSVWriter out){
 //        out.println("Time\t" + cloud.getHeaders());
 //        out.println(time+"\t"+cloud.getState());
+        String[] header= {cloud.getHeaders()};
+        out.writeNext(header);
         while(in.hasNext()){
             int time=in.nextInt();
             String str=in.next();
@@ -23,34 +25,34 @@ public class Operator {
             int channel=in.nextInt();
             String command = in.next();
             if (command.equals("P")){
-                lampControl.pressPower(out);
+                lampControl.pressPower(out, time);
             }else{
                 String command2 = in.next();
                 command = command+command2;
 
                 switch (command){
                     case "RU":{
-                        lampControl.rUP(out);
+                        lampControl.rUP(out, time);
                         break;
                     }
                     case "RD":{
-                        lampControl.rDOWN(out);
+                        lampControl.rDOWN(out, time);
                         break;
                     }
                     case "GU":{
-                        lampControl.gUP(out);
+                        lampControl.gUP(out, time);
                         break;
                     }
                     case "GD":{
-                        lampControl.gDOWN(out);
+                        lampControl.gDOWN(out, time);
                         break;
                     }
                     case "BU":{
-                        lampControl.bUP(out);
+                        lampControl.bUP(out, time);
                         break;
                     }
                     case "BD":{
-                        lampControl.bDOWN(out);
+                        lampControl.bDOWN(out, time);
                         break;
                     }
                     default: {
