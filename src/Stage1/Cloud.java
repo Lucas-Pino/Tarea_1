@@ -22,6 +22,7 @@ public class Cloud {
             }
 
         }
+
         out.writeNext(instruction);
     }
     public void changeRed(int channel, String change, CSVWriter out){

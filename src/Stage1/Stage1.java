@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Stage1 {
     public static void main(String[] args) throws IOException {
+
 //        if (args.length != 1) {
 //            System.out.println("Usage: java Stage1 <configurationFile.txt>");
 //            System.exit(-1);
@@ -32,10 +33,9 @@ public class Stage1 {
         LampControl lampControl = new LampControl(channel, cloud);
         Operator operator = new Operator(lampControl, cloud);
 
-        File file = new File("hola");
-        FileWriter outputfile = new FileWriter(file);
+        File fileOut = new File("src/Stage1/output.csv");
+        FileWriter outputfile = new FileWriter(fileOut);
         CSVWriter writer = new CSVWriter(outputfile);
-
         operator.executeCommands(in, writer);
     }
 }

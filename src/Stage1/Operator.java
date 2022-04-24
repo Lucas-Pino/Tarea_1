@@ -7,7 +7,8 @@ import java.util.Scanner;
 
 public class Operator {
     public Operator(LampControl lc, Cloud c){
-        //???
+        this.lampControl = lc;
+        this.cloud = c;
     }
     public void executeCommands(Scanner in, CSVWriter out){
 //        out.println("Time\t" + cloud.getHeaders());
