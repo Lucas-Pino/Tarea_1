@@ -38,5 +38,7 @@ public class Stage1 {
         FileWriter outputfile = new FileWriter(fileOut);
         CSVWriter writer = new CSVWriter(outputfile);
         operator.executeCommands(in, writer);
+        writer.close(); // cierre del archivo escritura
+
     }
 }
