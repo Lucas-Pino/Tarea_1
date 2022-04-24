@@ -18,7 +18,7 @@ public class Cloud {
         for (Lamp l: lamps){
             if (l.getChannel() == channel){
                 l.changePowerState();
-                instruction[0] = instruction[0] + "   " + l.toString();
+                instruction[0] = instruction[0] + l.toStr();
             }
 
         }
@@ -61,7 +61,8 @@ public class Cloud {
     public String getHeaders(){
         String header = "";
         for (Lamp l: lamps){
-            header += l.getHeader();
+            header.append("L").append(counter).append("R\t").append("L").append(counter).append("G\t").append("L").append(counter).append("B\t");
+            counter ++;
         }
             
         return header;

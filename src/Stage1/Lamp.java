@@ -79,7 +79,7 @@ public class Lamp {
         return "Hola";
     }
 
-    public String toString(){
+    public String toStr(){
         if (state==LampState.ON)
             return ""+r+"\t"+g+"\t"+b;
         else
