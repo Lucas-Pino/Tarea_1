@@ -34,22 +34,32 @@ public class Stage3 {
             cloud.addRollerShade(rollerShade);
         }
         int lampChannel = 0;
-        for (int i=0; i<numLamps; i++){             // channels ctrl lamparas
+        for (int i=0; i<numLamps; i++) {             // channels lamparas
             lampChannel = in.nextInt();
             Lamp lamp = new Lamp(lampChannel);
             cloud.addLamp(lamp);
         }
-        // creating just one roller shade's control at <canal0>
-        int channel = in.nextInt();
-        for (int i=0; i<numLamps; i++){             // channels ctrl lamparas
-            lampChannel = in.nextInt();
-            Lamp lamp = new Lamp(lampChannel);
-                    cloud.addLamp(lamp);
+
+        int channelShadeControl = 0;
+        ArrayList<ShadeControl> shadesControlers = new ArrayList<ShadeControl>();
+        for (int i=0; i<numShadeControls; i++){                             //channels ctrl cortinas
+            channelShadeControl = in.nextInt();
+
+            ShadeControl shadeControl = new ShadeControl(channelShadeControl, cloud);
+            shadesControlers.add(shadeControl);
         }
-        channel = in.nextInt();
-        ShadeControl shadeControl = new ShadeControl(channel, cloud);
-        in.nextLine(); // skipping creation of lamp's control at <canal0>
-        Operator operator = new Operator(shadeControl, cloud);
+
+        int channelLampControl = 0;
+        ArrayList<LampControl> lampsControlers = new ArrayList<LampControl>();
+        for (int i=0; i<numLampsControl; i++){                              //channels ctrl lamparas
+            channelLampControl = in.nextInt();
+
+            LampControl lampControl = new LampControl(channelShadeControl, cloud);
+            lampsControlers.add(lampControl);
+        }
+
+        //OPERATOR
+        Operator operator = new Operator(shadesControlers, lampsControlers, cloud);
 
 
         // Write CSV
