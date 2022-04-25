@@ -54,7 +54,7 @@ public class Stage3 {
         for (int i=0; i<numLampsControl; i++){                              //channels ctrl lamparas
             channelLampControl = in.nextInt();
 
-            LampControl lampControl = new LampControl(channelShadeControl, cloud);
+            LampControl lampControl = new LampControl(channelLampControl, cloud);
             lampsControlers.add(lampControl);
         }
 
