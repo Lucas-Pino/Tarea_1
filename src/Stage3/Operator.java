@@ -2,12 +2,14 @@ import com.opencsv.CSVWriter;
 
 import java.io.PrintStream;
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Operator {
-    public Operator(ShadeControl sc, Cloud c){
-        this.rsControl = sc;
+    public Operator(ArrayList shadesControlers, ArrayList lampsControlers, Cloud c){
         this.cloud = c;
+        this.rsControlers = shadesControlers;
+        this.lmpsControlers =  lampsControlers;
     }
 //    public void addShadeControl(ShadeControl sc){
 //        // ???
@@ -52,4 +54,6 @@ public class Operator {
     private ShadeControl rsControl;
     private Cloud cloud;
     private final double delta=0.1;
+    private ArrayList<DomoticDeviceControl> lmpsControlers;
+    private ArrayList<DomoticDeviceControl> rsControlers;
 }

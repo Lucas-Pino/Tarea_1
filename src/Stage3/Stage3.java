@@ -59,7 +59,7 @@ public class Stage3 {
         }
 
         //OPERATOR
-        Operator operator = new Operator(shadesControlers, lampsControlers, cloud);
+        Operator operator = new Operator(shadesControlers, lampsControlers, cloud); //LO ESTOY ARREGLANDO
 
 
         // Write CSV
