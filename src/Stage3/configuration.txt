@@ -1,8 +1,8 @@
-1	5	1	0       //#cortinas #lamparas #controlesCortinas #controlesLamparas OK
-2.5	1.5	1           //alfas, largo, canal cortinas      OK
-1                 //canales lamparas    ok
-1   2               //canales controles cortinas        ok
-                    //canales control lamparas
+5	5	1	1
+2.5	1.5	1
+1
+1   2
+
 0	C	1	D
 3	C	1	S
 7	C	1	D

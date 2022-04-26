@@ -7,29 +7,29 @@ public class LampControl {
 
     }
 
-    public void pressPower(CSVWriter out, int time){
-        cloud.changeLampPowerState(channel, out, time);
+    public void pressPower(){
+        cloud.changeLampPowerState(channel);
     }
     public int getChannel(){
         return channel;
     }
-    public void rUP(CSVWriter out, int time){
-        cloud.changeRed(channel, "UP", out, time);
+    public void rUP(){
+        cloud.changeRed(channel, "UP");
     }
-    public void rDOWN(CSVWriter out, int time){
-        cloud.changeRed(channel, "DOWN", out, time);
+    public void rDOWN(){
+        cloud.changeRed(channel, "DOWN");
     }
-    public void gUP(CSVWriter out, int time){
-        cloud.changeGreen(channel, "UP", out, time);
+    public void gUP(){
+        cloud.changeGreen(channel, "UP");
     }
-    public void gDOWN(CSVWriter out, int time){
-        cloud.changeGreen(channel, "DOWN", out, time);
+    public void gDOWN(){
+        cloud.changeGreen(channel, "DOWN");
     }
-    public void bUP(CSVWriter out, int time){
-        cloud.changeBlue(channel, "UP", out, time);
+    public void bUP(){
+        cloud.changeBlue(channel, "UP");
     }
-    public void bDOWN(CSVWriter out, int time) {
-        cloud.changeBlue(channel, "DOWN", out, time);
+    public void bDOWN() {
+        cloud.changeBlue(channel, "DOWN");
     }
 
 

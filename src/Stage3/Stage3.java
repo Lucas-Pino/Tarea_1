@@ -19,16 +19,21 @@ public class Stage3 {
         Cloud cloud = new Cloud();
         // reading <#_de_cortinas> <#_de_lámparas> <#_controles_cortinas> <#_controles_lámparas>
         int numRollerShades = in.nextInt();
-        int numLamps = in.nextInt();  // skip number of lamps
+        int numLamps = in.nextInt();
         int numShadeControls = in.nextInt();
-        int numLampsControl = in.nextInt(); // skip number of lamp's controls
+        int numLampsControl = in.nextInt();
         // read <alfa0> <length0> <canal0> … <alfaN_1> <lengthN_1> <canalN_1>
-        double alpha = 0;
-        double maxLength = 0;
+        String alp;
+        String mL;
         int shadeChannel = 0;
         for (int i = 0; i<numRollerShades; i++){
-            alpha = in.nextDouble();
-            maxLength = in.nextDouble();
+            alp = in.next();
+            double alpha = Double.parseDouble(alp);
+
+            mL = in.next();
+            double maxLength = Double.parseDouble(mL);
+
+
             shadeChannel = in.nextInt();
             RollerShade rollerShade = new RollerShade(shadeChannel, alpha, maxLength);
             cloud.addRollerShade(rollerShade);
@@ -54,7 +59,7 @@ public class Stage3 {
         for (int i=0; i<numLampsControl; i++){                              //channels ctrl lamparas
             channelLampControl = in.nextInt();
 
-            LampControl lampControl = new LampControl(channelLampControl, cloud);
+            LampControl lampControl = new LampControl(channelShadeControl, cloud);
             lampsControlers.add(lampControl);
         }
 
