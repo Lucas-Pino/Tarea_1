@@ -5,15 +5,13 @@ import java.io.IOException;
 import java.util.*;
 
 
-
-
 public class Extra {
     public static void main(String [] args) throws IOException {
 //        if (args.length != 1) {
 //            System.out.println("Usage: java Stage1 <configurationFile.txt>");
 //            System.exit(-1);
 //        }
-        File file = new File("src/Stage4/configuration.txt");
+        File file = new File("src/Extra/configuration.txt");
         Scanner in = new Scanner(file);
         //System.out.println("File: " + args[0]);
         Cloud cloud = new Cloud();
@@ -22,6 +20,7 @@ public class Extra {
         int numLamps = in.nextInt();
         int numShadeControls = in.nextInt();
         int numLampsControl = in.nextInt();
+        int lightSensors = in.nextInt();
         // read <alfa0> <length0> <canal0> … <alfaN_1> <lengthN_1> <canalN_1>
         String alp;
         String mL;
@@ -43,6 +42,13 @@ public class Extra {
             lampChannel = in.nextInt();
             Lamp lamp = new Lamp(lampChannel);
             cloud.addLamp(lamp);
+        }
+
+        int lightSensorChannel = 0;
+        for (int i=0; i<lightSensors; i++) {             // channels lamparas
+            lightSensorChannel = in.nextInt();
+            LightSensor lightSensor = new LightSensor(lightSensorChannel);
+            cloud.addLightSensor(lightSensor);
         }
 
         int channelShadeControl = 0;
@@ -68,7 +74,7 @@ public class Extra {
 
 
         // Write CSV
-        File Out_stage2 = new File("src/Stage4/output.csv");
+        File Out_stage2 = new File("src/Extra/output.csv");
         FileWriter outputfile = new FileWriter(Out_stage2);
         CSVWriter writer = new CSVWriter(outputfile);
         operator.executeCommands(in, writer);

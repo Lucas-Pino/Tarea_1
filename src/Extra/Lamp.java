@@ -13,6 +13,9 @@ public class Lamp extends DomoticDevice{
 
     }
 
+    public int getColorsSum() {
+        return (r+g+b);
+    }
 
 
     public enum LampState {

@@ -5,11 +5,15 @@ import java.util.ArrayList;
 public class Cloud {
     public Cloud() {
         lamps = new ArrayList<DomoticDevice>();
+        lightSensors = new ArrayList<LightSensor>();
         rollerShades = new ArrayList<DomoticDevice>();
     }
     public void addLamp(Lamp l){
         l.setDomoticDevice(lamps.size(), l.getChannel());
         lamps.add(l);
+    }
+    public void addLightSensor(LightSensor s){
+        lightSensors.add(s);
     }
     public void addRollerShade(RollerShade rs){
         rs.setDomoticDevice(rollerShades.size(), rs.getChannel());
@@ -31,12 +35,20 @@ public class Cloud {
     //Funciones de lampara
 
     public void changeLampPowerState(int channel){
+
         for (DomoticDevice dd: lamps){
             Lamp l =(Lamp)dd;
             if (l.getChannel() == channel){
                 l.changePowerState();
             }
-
+        }
+        for (LightSensor sensor: lightSensors){
+            if (sensor.getChannel() == channel){
+                if (sensor.checkLights(lamps)){
+                    closeShade(channel);
+                }
+                break;
+            }
         }
     }
     public void changeRed(int channel, String change){
@@ -45,6 +57,14 @@ public class Cloud {
             if (l.getChannel() == channel){
                 if (change.equals("UP")) {
                     l.rUP();
+                    for (LightSensor sensor: lightSensors){
+                        if (sensor.getChannel() == channel){
+                            if (sensor.checkLights(lamps)){
+                                closeShade(channel);
+                            }
+                            break;
+                        }
+                    }
                 }else if (change.equals("DOWN")){
                     l.rDOWN();
                 }
@@ -57,6 +77,14 @@ public class Cloud {
             if (l.getChannel() == channel){
                 if (change.equals("UP")) {
                     l.gUP();
+                    for (LightSensor sensor: lightSensors){
+                        if (sensor.getChannel() == channel){
+                            if (sensor.checkLights(lamps)){
+                                closeShade(channel);
+                            }
+                            break;
+                        }
+                    }
                 }else if (change.equals("DOWN")){
                     l.gDOWN();
                 }
@@ -69,6 +97,14 @@ public class Cloud {
             if (l.getChannel() == channel){
                 if (change.equals("UP")) {
                     l.bUP();
+                    for (LightSensor sensor: lightSensors){
+                        if (sensor.getChannel() == channel){
+                            if (sensor.checkLights(lamps)){
+                                closeShade(channel);
+                            }
+                            break;
+                        }
+                    }
                 }else if (change.equals("DOWN")){
                     l.bDOWN();
                 }
@@ -79,6 +115,15 @@ public class Cloud {
 
 
     //Funciones de cortina
+
+    public void closeShade(int channel){
+        for(DomoticDevice  dd: rollerShades){
+            RollerShade rs =(RollerShade)dd;
+            if (rs.getChannel() == channel) {
+                rs.close();
+            }
+        }
+    }
 
     public void startShadeUp(int channel){
         for(DomoticDevice  dd: rollerShades){
@@ -129,5 +174,6 @@ public class Cloud {
         return state;
     }
     private ArrayList<DomoticDevice> lamps;
+    private ArrayList<LightSensor> lightSensors;
     private ArrayList<DomoticDevice> rollerShades;
 }

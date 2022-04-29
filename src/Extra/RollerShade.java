@@ -21,6 +21,9 @@ public class RollerShade extends DomoticDevice {
     public void stop(){
         motor.stop();
     }
+    public void close(){
+        motor.close();
+    }
     public void advanceTime(double delta){
         motor.advanceTime(delta);
     }
@@ -54,6 +57,9 @@ public class RollerShade extends DomoticDevice {
         }
         public void stop(){
             state = MotorState.STOPPED;
+        }
+        public void close(){
+            length = MaxShadeLength;
         }
         public void advanceTime(double delta){
 
