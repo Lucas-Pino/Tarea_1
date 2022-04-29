@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aeefa46-2f45-4e84-8ee9-42ddc1bc025b" name="Changes" comment="">
+    <list default="true" id="7aeefa46-2f45-4e84-8ee9-42ddc1bc025b" name="Changes" comment="test cherry">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tarea_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stage3/Stage3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage3/Stage3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Cloud.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Cloud.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDevice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDevice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDeviceControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDeviceControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Lamp$LampState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Lamp$LampState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Lamp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Lamp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/LampControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/LampControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Operator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Operator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor$MotorState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor$MotorState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/ShadeControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/ShadeControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Stage3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Stage3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/configuration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/configuration.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage3/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage3/output.csv" afterDir="false" />
+    </list>
+    <list id="0ced1350-7b1b-4511-8178-d53c6e8b1625" name="Changes by ale" comment="" />
+    <list id="6f9a6f56-798b-4ce9-8237-87c2ec2b7b95" name="Changes by nicolas" comment="Changes by nicolas">
+      <change beforePath="$PROJECT_DIR$/src/Stage3/Cloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage3/Cloud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage3/configuration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage3/configuration.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -27,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.096711814" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -48,8 +70,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651246161757</updated>
-      <workItem from="1651246162847" duration="1777000" />
+      <workItem from="1651246162847" duration="3156000" />
     </task>
+    <task id="LOCAL-00001" summary="test cherry">
+      <created>1651248279493</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651248279493</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes by nicolas">
+      <created>1651248293006</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651248293006</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,10 +97,38 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test cherry" />
+    <MESSAGE value="Changes by nicolas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by nicolas" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stage3/ShadeControl.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stage3/ShadeControl.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stage3/ShadeControl.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
