@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aeefa46-2f45-4e84-8ee9-42ddc1bc025b" name="Changes" comment="Stage 1234 Done">
-      <change afterPath="$PROJECT_DIR$/src/Extra/LightSensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Extra/configuration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Extra/configuration.txt" afterDir="false" />
+    <list default="true" id="7aeefa46-2f45-4e84-8ee9-42ddc1bc025b" name="Changes" comment="Extra done">
+      <change beforePath="$PROJECT_DIR$/Tarea_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea_1.iml" afterDir="false" />
     </list>
     <list id="0ced1350-7b1b-4511-8178-d53c6e8b1625" name="Changes by ale" comment="" />
-    <list id="d3912e3f-7c1d-473e-bb4d-a46d0da2e52a" name="Changes by nicolas" comment="Changes by nicolas">
-      <change beforePath="$PROJECT_DIR$/src/Extra/Cloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Extra/Cloud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Extra/Extra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Extra/Extra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Extra/Lamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Extra/Lamp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Extra/RollerShade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Extra/RollerShade.java" afterDir="false" />
-    </list>
+    <list id="d3912e3f-7c1d-473e-bb4d-a46d0da2e52a" name="Changes by nicolas" comment="Changes by nicolas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +39,7 @@
     <property name="project.structure.proportion" value="0.096711814" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Extra">
+  <component name="RunManager" selected="Application.Stage2">
     <configuration name="Extra" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Extra" />
       <module name="Tarea_1" />
@@ -99,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651246161757</updated>
       <workItem from="1651246162847" duration="4843000" />
-      <workItem from="1651251041293" duration="6805000" />
+      <workItem from="1651251041293" duration="7087000" />
     </task>
     <task id="LOCAL-00001" summary="test cherry">
       <created>1651248279493</created>
@@ -150,7 +143,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651257051658</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Extra done">
+      <created>1651261025134</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651261025134</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changes by nicolas">
+      <created>1651261047261</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651261047261</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Extra done">
+      <created>1651261058657</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651261058657</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,9 +187,10 @@
     <MESSAGE value="test cherry" />
     <MESSAGE value="Stage 3 Done" />
     <MESSAGE value="stage 3 done nico" />
-    <MESSAGE value="Changes by nicolas" />
     <MESSAGE value="Stage 1234 Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stage 1234 Done" />
+    <MESSAGE value="Changes by nicolas" />
+    <MESSAGE value="Extra done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extra done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
