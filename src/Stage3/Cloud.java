@@ -83,19 +83,25 @@ public class Cloud {
     public void startShadeUp(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            rs.startUp();
+            if (rs.getChannel() == channel) {
+                rs.startUp();
+            }
         }
     }
     public void startShadeDown(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            rs.startDown();
+            if (rs.getChannel() == channel) {
+                rs.startDown();
+            }
         }
     }
     public void stopShade(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            rs.stop();
+            if (rs.getChannel() == channel) {
+                rs.stop();
+            }
         }
     }
     public String getHeaders(){

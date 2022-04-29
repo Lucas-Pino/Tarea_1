@@ -1,12 +1,16 @@
 public class RollerShade extends DomoticDevice {
     public RollerShade (int channel, double alpha, double length) {
         this.motor = motor;
+        this.channel = channel;
         this.MaxShadeLength = length;
         this.length = length;
         motor = new Motor(alpha, channel);
     }
     public Motor.MotorState getMotorState(){
         return motor.state;
+    }
+    public int getChannel(){
+        return channel;
     }
     public void startUp(){
         motor.turnUp();
@@ -74,6 +78,7 @@ public class RollerShade extends DomoticDevice {
     private double length;
     private double MaxShadeLength;
     private static int nextId;
+    private int channel;
 
 
 }
