@@ -1,9 +1,8 @@
 public class DomoticDeviceControl {
-    public DomoticDeviceControl(){
-        // ???
-    }
-    public DomoticDeviceControl(int ch, Cloud c){
-        // ???
+
+    public void DomoticDeviceControl(int ch, Cloud c){
+        channel = ch;
+        cloud = c;
     }
     public int getChannel() {
         return channel;

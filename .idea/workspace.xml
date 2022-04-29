@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aeefa46-2f45-4e84-8ee9-42ddc1bc025b" name="Changes" comment="test cherry">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7aeefa46-2f45-4e84-8ee9-42ddc1bc025b" name="Changes" comment="Stage 3 Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tarea_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea_1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Cloud.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Cloud.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDevice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDevice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDeviceControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDeviceControl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Lamp$LampState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Lamp$LampState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/DomoticDeviceControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Lamp$LampState.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Lamp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Lamp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/LampControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/LampControl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Operator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Operator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor$MotorState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor$MotorState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/ShadeControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/ShadeControl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Stage3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/Stage3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor$MotorState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade$Motor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/RollerShade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/ShadeControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Stage2_ClassDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/Stage3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/configuration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/configuration.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea_1/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea_1/output.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stage3/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage3/output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage1/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage1/output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/DomoticDeviceControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage2/DomoticDeviceControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/configuration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage2/configuration.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage2/output.csv" afterDir="false" />
     </list>
     <list id="0ced1350-7b1b-4511-8178-d53c6e8b1625" name="Changes by ale" comment="" />
-    <list id="6f9a6f56-798b-4ce9-8237-87c2ec2b7b95" name="Changes by nicolas" comment="Changes by nicolas">
-      <change beforePath="$PROJECT_DIR$/src/Stage3/Cloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage3/Cloud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stage3/configuration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage3/configuration.txt" afterDir="false" />
+    <list id="3856bdf8-c8cd-47ea-af3a-1b9a2e73721c" name="Changes by diego" comment="" />
+    <list id="d3912e3f-7c1d-473e-bb4d-a46d0da2e52a" name="Changes by nicolas" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Stage1/Cloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage1/Cloud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage1/configuration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage1/configuration.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/Cloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage2/Cloud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/DomoticDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage2/DomoticDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/Lamp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/LampControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage2/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/RollerShade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage2/RollerShade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage2/Stage2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage2/Stage2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +64,49 @@
     <property name="project.structure.proportion" value="0.096711814" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Extra">
+    <configuration name="Extra" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Extra" />
+      <module name="Tarea_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stage 1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Stage1" />
+      <module name="Tarea_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stage 4" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Stage4" />
+      <module name="Tarea_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stage2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Stage2" />
+      <module name="Tarea_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stage3" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Stage3" />
       <module name="Tarea_1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Stage 4" />
+      <item itemvalue="Application.Stage2" />
+      <item itemvalue="Application.Stage 1" />
+      <item itemvalue="Application.Extra" />
+      <item itemvalue="Application.Stage3" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +116,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651246161757</updated>
-      <workItem from="1651246162847" duration="3156000" />
+      <workItem from="1651246162847" duration="4843000" />
+      <workItem from="1651251041293" duration="3484000" />
     </task>
     <task id="LOCAL-00001" summary="test cherry">
       <created>1651248279493</created>
@@ -86,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651248293006</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Stage 3 Done">
+      <created>1651249515550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651249515550</updated>
+    </task>
+    <task id="LOCAL-00004" summary="stage 3 done nico">
+      <created>1651249539820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651249539820</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,25 +169,42 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test cherry" />
     <MESSAGE value="Changes by nicolas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by nicolas" />
+    <MESSAGE value="Stage 3 Done" />
+    <MESSAGE value="stage 3 done nico" />
+    <option name="LAST_COMMIT_MESSAGE" value="stage 3 done nico" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Stage3/ShadeControl.java</url>
           <line>7</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Stage3/ShadeControl.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Stage3/ShadeControl.java</url>
           <line>15</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stage3/Cloud.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stage4/RollerShade.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stage2/Operator.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stage2/Operator.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
