@@ -1,3 +1,5 @@
+import com.opencsv.CSVWriter;
+
 import java.util.ArrayList;
 
 public class Cloud {
@@ -6,9 +8,11 @@ public class Cloud {
         rollerShades = new ArrayList<DomoticDevice>();
     }
     public void addLamp(Lamp l){
+        l.setDomoticDevice(lamps.size(), l.getChannel());
         lamps.add(l);
     }
     public void addRollerShade(RollerShade rs){
+        rs.setDomoticDevice(rollerShades.size(), rs.getChannel());
         rollerShades.add(rs);
     }
     public void advanceTime(double delta){
@@ -23,25 +27,81 @@ public class Cloud {
 //        DomoticDevice test = new DomoticDevice();
 //        return test;
 //    }
+
+    //Funciones de lampara
+
     public void changeLampPowerState(int channel){
-        // ???
+        for (DomoticDevice dd: lamps){
+            Lamp l =(Lamp)dd;
+            if (l.getChannel() == channel){
+                l.changePowerState();
+            }
+
+        }
     }
+    public void changeRed(int channel, String change){
+        for (DomoticDevice dd: lamps){
+            Lamp l =(Lamp)dd;
+            if (l.getChannel() == channel){
+                if (change.equals("UP")) {
+                    l.rUP();
+                }else if (change.equals("DOWN")){
+                    l.rDOWN();
+                }
+            }
+        }
+    }
+    public void changeGreen(int channel, String change){
+        for (DomoticDevice dd: lamps){
+            Lamp l =(Lamp)dd;
+            if (l.getChannel() == channel){
+                if (change.equals("UP")) {
+                    l.gUP();
+                }else if (change.equals("DOWN")){
+                    l.gDOWN();
+                }
+            }
+        }
+    }
+    public void changeBlue(int channel, String change){
+        for (DomoticDevice dd: lamps){
+            Lamp l =(Lamp)dd;
+            if (l.getChannel() == channel){
+                if (change.equals("UP")) {
+                    l.bUP();
+                }else if (change.equals("DOWN")){
+                    l.bDOWN();
+                }
+            }
+        }
+    }
+
+
+
+    //Funciones de cortina
+
     public void startShadeUp(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            rs.startUp();
+            if (rs.getChannel() == channel) {
+                rs.startUp();
+            }
         }
     }
     public void startShadeDown(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            rs.startDown();
+            if (rs.getChannel() == channel) {
+                rs.startDown();
+            }
         }
     }
     public void stopShade(int channel){
         for(DomoticDevice  dd: rollerShades){
             RollerShade rs =(RollerShade)dd;
-            rs.stop();
+            if (rs.getChannel() == channel) {
+                rs.stop();
+            }
         }
     }
     public String getHeaders(){
@@ -49,9 +109,9 @@ public class Cloud {
         for (DomoticDevice  rs: rollerShades){
             header += rs.getHeader()+"\t";
         }
-        for (DomoticDevice l: lamps){
-            header += l.getHeader()+"\t";
-        }
+//        for (DomoticDevice l: lamps){
+//            header += l.getHeader()+"\t";
+//        }
         return header;
     }
     public String getState(){
@@ -68,6 +128,11 @@ public class Cloud {
                 state = state + -100 +"\t";
             }
         }
+//        for (DomoticDevice  dd: lamps){
+//            Lamp l =(Lamp)dd;
+//            //state = state + rs.getMotorState() +"\t";
+//            state = state + l.toStr()+ "\t";
+//        }
         return state;
     }
     private ArrayList<DomoticDevice> lamps;

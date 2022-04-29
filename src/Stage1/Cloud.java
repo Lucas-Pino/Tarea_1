@@ -22,7 +22,6 @@ public class Cloud {
             }
 
         }
-        System.out.println(instruction[0]);
         out.writeNext(instruction);
     }
     public void changeRed(int channel, String change, CSVWriter out, int time){
@@ -37,7 +36,6 @@ public class Cloud {
                 instruction[0] = instruction[0] + l.toStr();
             }
         }
-        System.out.println(instruction[0]);
         out.writeNext(instruction);
     }
     public void changeGreen(int channel, String change, CSVWriter out, int time){
@@ -52,7 +50,6 @@ public class Cloud {
                 instruction[0] = instruction[0] + l.toStr();
             }
         }
-        System.out.println(instruction[0]);
         out.writeNext(instruction);
     }
     public void changeBlue(int channel, String change, CSVWriter out, int time){
@@ -67,7 +64,6 @@ public class Cloud {
                 instruction[0] = instruction[0] + l.toStr();
             }
         }
-        System.out.println(instruction[0]);
         out.writeNext(instruction);
     }
     public String getHeaders(){
